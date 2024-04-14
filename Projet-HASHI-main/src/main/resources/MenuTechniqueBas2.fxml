@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<StackPane prefHeight="839.0" prefWidth="1267.0" styleClass="background" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demojeumenu.controler.MenuTechniqueBas2">
+    <fx:include source="Logo.fxml" />
+    <VBox alignment="BASELINE_CENTER">
+        <Button styleClass="titre" text="TECHNIQUE BASIQUE" />
+    </VBox>
+    <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Text id="text" stroke="BLACK" text="2. Cas particuliers de 3 dans le coin, 5 sur le côté et 7 au milieu :" textAlignment="JUSTIFY" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView id="grilleImageView" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                <image>
+                    <Image url="@images/fleche.png" />
+                </image>
+            </ImageView>
+            <ImageView id="grilleImageView" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                <image>
+                    <Image url="@images/7.png" />
+                </image>
+            </ImageView>
+            <ImageView id="grilleImageView" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                <image>
+                    <Image url="@images/8.png" />
+                </image>
+            </ImageView>
+            <Button fx:id="bouton_retour" GridPane.columnIndex="2" GridPane.rowIndex="6" alignment="CENTER" contentDisplay="CENTER" onAction="#retour" prefWidth="180.0" styleClass="custom-button2" text="Retour"/>
+            <Button fx:id="bouton_suivant" GridPane.columnIndex="4" GridPane.rowIndex="6" alignment="CENTER" contentDisplay="CENTER" onAction="#suivant" prefWidth="180.0" styleClass="custom-button2" text="Suivant" />
+        </children>
+    </GridPane>
+
+
+    <Button onAction="#param" styleClass="param2" BorderPane.alignment="BOTTOM_RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+
+</StackPane>
